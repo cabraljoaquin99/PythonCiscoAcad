@@ -1,45 +1,28 @@
+#https://edube.org/learn/python-essentials-1-esp/laboratorio-un-a-ntilde-o-bisiesto-escribiendo-tus-propias-funciones-1
+#4.3.1.6 LABORATORIO: Un año bisiesto: escribiendo tus propias funciones
 '''
-Si el número del año no es divisible entre cuatro, es un año común.
-De lo contrario, si el número del año no es divisible entre 100, 
-es un año bisiesto.
-De lo contrario, si el número del año no es divisible entre 400, 
-es un año común.
-De lo contrario, es un año bisiesto.
-
-
-#Este código
-
-year = int(input("Introduce un año: "))
-a = int (0)
-
-if year % 4 == 0 and year >= 1582:
-    print ("Año Bisiesto")
-else:
-    if year %100 == 0 and year >= 1582:
-        print ("Año Bisiesto")
-    else:
-        if year %400 == 0 and year >= 1582:
-            print ("Año Bisiesto")
-        elif year %400 != 0 and year >= 1582:
-            print ("Año Común")
-        elif year < 1582:
-            print ("No esta dentro del período del calendario Gregoriano")
+Tu tarea es escribir y probar una función 
+que toma un argumento (un año) y devuelve True 
+si el año es un año bisiesto, o False si no lo es.
 '''
-def es_bisiesto (yr):
-# Falta código ...
-#
-# def 'algo' esta definiendo una función
-test_years = [1900, 2000, 2016, 1987]
-#test_months = [2, 2, 1, 11]
+def is_year_leap(year):
+	if year % 4 != 0:
+		return False
+	elif year % 100 != 0:
+		return True
+	elif year % 400 != 0:
+		return False
+	else:
+		return True
+
+test_data = [1900, 2000, 2016, 1987]
 test_results = [False, True, True, False]
+for i in range(len(test_data)):
+	yr = test_data[i]
+	print(yr,"-> ",end="")
+	result = is_year_leap(yr)
+	if result == test_results[i]:
+		print("OK")
+	else:
+		print("Fallido")
 
-for i in range (len(test_years)):
-    yr = test_years[i]
-    print(yr, "->", end="")
-    result = es_bisiesto(yr)
-    if result == test_results[i]:
-        print ("OK")
-        print True
-    else:
-        print ("Fallido")
-        print False
