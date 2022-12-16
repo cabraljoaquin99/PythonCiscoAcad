@@ -1,4 +1,5 @@
-import datetime
+import datetime #modulo
+
 #https://edube.org/learn/python-essentials-1-esp/laboratorio-un-a-ntilde-o-bisiesto-escribiendo-tus-propias-funciones-1
 #4.3.1.6 LABORATORIO: Un año bisiesto: escribiendo tus propias funciones
 '''
@@ -15,12 +16,6 @@ def is_year_leap(year):
 		return False
 	else:
 		return True
-def anio_mes(xanio_xmes):
-	xanio = input ('INGRESE UN AÑO: ')
-	xmes = input ('INGRESE UN MES: ')
-	anio=[]
-	mes=[1,2,3,4,5,6,7,8,9,10,11,12]
-	dia=[1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
 
 test_data = [1900, 2000, 2016, 1987]
 test_results = [False, True, True, False]
@@ -32,4 +27,3 @@ for i in range(len(test_data)):
 		print("OK")
 	else:
 		print("Fallido")
-

@@ -14,6 +14,8 @@ Dentro de Buscar Contacto
 3 - Buscar por Empresa
 4 - Buscar por localidad
 
+#diccionarios
+
 agenda = {2475644: ['Nombre', 'Apellido', 'Empresa', 'Localidad', 'e-mail', 'Telefono']}
 '''
 nombre = ['Joaquin', 'Alejandro', 'Soledad', 'Sabrina', 'Rolando', 'Cristiano']
