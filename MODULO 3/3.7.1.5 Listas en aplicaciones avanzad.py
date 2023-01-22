@@ -1,7 +1,8 @@
 # 3.7.1.5 Listas en aplicaciones avanzadas â Arreglos
 '''
     Python no limita la profundidad de la inclusión lista en lista. Aquí puedes ver un ejemplo de un arreglo tridimensional:
-    Imagina un hotel. Es un hotel enorme que consta de tres edificios, de 15 pisos cada uno. 
+    Imagina un hotel. 
+    Es un hotel enorme que consta de tres edificios, de 15 pisos cada uno. 
     Hay 20 habitaciones en cada piso. Para esto, necesitas un arreglo que pueda recopilar y 
     procesar información sobre las habitaciones ocupadas/libres.
 '''
@@ -35,4 +36,5 @@ for room_number in range(20):
     cubed = [num ** 3 for num in range(5)]
     print(cubed)  # outputs: [0, 1, 8, 27, 64]
 '''
+
 
