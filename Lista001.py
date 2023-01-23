@@ -14,11 +14,10 @@ elementos = [12,24,3,42,555,6,70,9]
 cantidad = 0
 x = 0
 while x < len (elementos): # len ???
-    if x < elementos:   #ver en el debugger
+    if elementos[x] > 100:   #ver en el debugger
         cantidad += 1
     x += 1
 print ("La lista contiene los valores: \n")
 print(elementos)
 print("Cantidad de valores mayores a 100 que hay en la lista: ")
 print(cantidad)
-
