@@ -1,0 +1,22 @@
+'''
+1- Presentar un menu de opciones
+	CALCULADORA EN PYTHON
+	Suma
+	Resta
+	Multiplicacion
+	Division
+	Potencia
+
+2- Solicitar l usuario, ingrese una opción:
+	Ingrese una opción a realizar: _
+
+3- Solicite al usuario "ingrese dos operandos:"
+
+4- Realizar la operación seleccionada.
+
+5- Presentar el resultado.
+'''
+
+calculadora = input ("Ingrese una opción de Calculadora: ")
+
+
