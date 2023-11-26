@@ -7,7 +7,13 @@ for i in range(num):
     my_list.append(val)
 
 while swapped:
-    swapped = False
+    swapped = False # aqui ya entra en el bucle, 
+    # pero la cond False solo es para que el programa
+    # no sea infinito, asi sigue por el bucle for, abajo
+    # llena la variable 'i' en una longitud igual a 'my_list' - 1
+    # El algoritmo empleado es el de 
+    # Ordenamiento de la burbuja: Los elementos pequeños
+    # "suben" gradualmente hacia el principio de la lista
     for i in range(len(my_list) - 1):
         if my_list[i] > my_list[i + 1]:
             swapped = True
